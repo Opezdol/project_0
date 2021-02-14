@@ -1,13 +1,9 @@
-let i = 0;
+document.addEventListener("DOMContentLoaded", function () {
 
-
-
-function count(){
-    i++;
-    document.querySelector('h1').innerHTML = i;
-    if (i % 2 === 0 ){
-        alert('MOD TWO, biatch!!');
-    }
-}
-
-button = document.querySelector('button').onclick = count;
+    
+    document.querySelector('form').onsubmit = function(){
+        const name  = document.querySelector('#name').value;
+        alert(name);
+        document.querySelector('h2').innerHTML = `Hello, ${name}`;
+    };
+});
