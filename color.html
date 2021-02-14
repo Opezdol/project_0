@@ -1,0 +1,28 @@
+<html>
+    <head><title>Color change! </title>
+    
+        <script>
+            //  execute code after DOM is loaded
+            document.addEventListener('DOMContentLoaded', function () {
+                // for each button subscribe function. function takes each element as a parameter
+                document.querySelectorAll('button').forEach(function (button) {
+                    // when button clicked  = function...
+                    button.onclick = function() {
+                        document.querySelector('h1').style.color = button.dataset.color;
+                    }
+                }); 
+            });
+            
+        </script>
+    </head>
+    
+    
+    
+    </head>
+    <body>
+        <h1>Test template</h1>
+        <button data-color="red">Red</button>
+        <button data-color="green">Green</button>
+        <button data-color="yellow">Yellow</button>
+    </body>
+</html>.
