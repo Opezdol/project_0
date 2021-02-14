@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Search engine Frontside
-        </title>
+        <title> Hello JS!  </title>
+
         <style>
- /* style come here  */
+ /*test  style comes here  */
 
         </style>
+
+        <script>
+            
+            function hello () {
+                if (document.querySelector('h1').innerHTML === 'Hello'){
+                    document.querySelector('h1').innerHTML = 'Goodbye!!';
+                } else {
+                    document.querySelector('h1').innerHTML = 'Hello';
+                }
+
+
+            };
+
+        </script>
+
+
+
+
     </head>
     <body>
-         <div id="top">
-             <form action="https://www.google.com/search">
-                <input type="text" name='q' placeholder="simple search query">
-                <input type="submit" value ='Google Search'>
-                      
-            </form>
-        
-         </div>
-         <div id="middle"></div>
-         <div id="bottom"></div>
 
-        </body>
+        <form action="https://www.google.com/search">
+            <input type="text" name='q' placeholder="simple search query">
+            <input type="submit" value ='Google Search'>
+                    
+        </form>
+         
+        <h1>Hello</h1>
+        <button onclick="hello()">ClickME</button>
+
+
+    </body>
     
 </html>
